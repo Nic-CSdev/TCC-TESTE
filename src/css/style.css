@@ -1,0 +1,187 @@
+body{
+    background-color: #1e1f27;
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.logo img{
+    padding-top: 20px;
+    width: 170px;
+    height: 170px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #24C707;
+    background-color: #14151E;
+}
+
+
+.navegacao .menu{
+    display: flex;
+    margin-right: 30px;
+}
+
+.navegacao .menu .item{
+    padding: 10px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Kanit';
+}
+
+.navegacao .menu .item a{
+   padding: 10px;
+   transition: ease-in-out .2s;
+}
+
+.navegacao .menu .item a:hover{
+    color: #95E937;
+    letter-spacing: 0.5px;
+    transition: .3s ease-in-out;
+}
+
+
+.inicio{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.inicio .painel img{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    animation: float 3s ease-in-out infinite; 
+}
+
+.inicio .painel{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.conteudo{
+    width: 750px;
+    height: 500px;
+    font-weight: 500;
+    font-family: 'Kanit';
+    padding-left: 50px;
+}
+
+.conteudo h1{
+    font-size: 50px;
+}
+
+.conteudo .palavra-destacada{
+    color: #95E937;
+    border-bottom: .2px solid #95E937;
+}
+
+.conteudo p{
+    line-height: 35px;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    padding: 20px 20px 40px 0px
+}
+
+.conteudo .saiba-mais{
+    color: #14151E;
+    background-color: #95E937;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    font-size: 25px;
+    transition: ease-in-out .3s;
+}
+
+.conteudo .saiba-mais:hover{
+    color: #fff;
+    box-shadow: 0 0 17px #23A364;
+    background-color: #24C707;
+    transition: ease-in-out .3s;
+}
+
+.final{
+    background-color: #14151E;
+}
+
+
+.final .rodape .icones{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    border-top: 2px solid #fff;
+    padding: 30px 0 30px 0;
+}
+
+.final .rodape .icones a{
+    font-size: 30px;
+    transition: ease-in-out .3s;
+}
+
+.final .rodape .icones a:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .3s;
+    text-shadow: 0 0 20px #23A364;
+    color: #3eca86;
+}
+
+.final .rodape p{
+    text-align: center;
+    padding-left: 20px;
+    font-family: 'Roboto Slab';
+}
+
+.sobre-nos{
+    display: flex;
+}
+
+.sobre-nos .logo img{
+    width: 500px;
+    height: 500px;
+}
+
+.quem-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    
+}
+
+.quem-somos h1{
+    color: #95E937;
+    font-size: 50px;
+    font-family: 'Kanit';
+}
+
+.quem-somos p{
+    line-height: 40px;
+    font-size: 25px;
+    font-family: 'Roboto Slab';
+}
+
+@keyframes float{
+    0%{
+        .inicio .painel img{
+            transform: translateY(0px);
+        }
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        .inicio .painel img{
+            transform: translateY(0);
+        }
+    }
+}
